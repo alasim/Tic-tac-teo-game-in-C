@@ -2,7 +2,7 @@
 #include <stdlib.h>
 char b[] =
 {
-    '0','1','2','3',
+    '0','1','2','3', // ignore 0;
     '4','5','6',
     '7','8','9'
 };
@@ -80,22 +80,22 @@ int main()
           b[ans]=symble[count%2];
         }
 
-        int res = check();
+        int res = check(); // check board;
         switch(res)
         {
         case 1:
             printf("\n\n\t\tPlayers 1: X won.\n\n\n");
-            system("color 2f");
+            system("color 2f"); // backround color will be green.
             system("pause");
             break;
         case 0:
             printf("\n\n\t\tPlayers 1: O won.\n\n\n");
-            system("color 2f");
+            system("color 2f"); // backround color will be green.
             system("pause");
             break;
         case 2:
             printf("\n\t\tGame draw.\n\n\n");
-            system("color cf");
+            system("color cf"); // backround color will be red.
             system("pause");
             break;
         }
